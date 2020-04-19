@@ -1,8 +1,9 @@
 package lecturaArchivoCondicional;
 
-public class FiltroVocales implements Filter<String>{
-	
-	public String filtro() {
+public class FiltroVocales implements Filtro<String> {
+
+	@Override
+	public String apply(String s) {
 		return "supino";
 	}
 }

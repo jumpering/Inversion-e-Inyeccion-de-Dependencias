@@ -1,8 +1,9 @@
 package lecturaArchivoCondicional;
 
-public class FiltroLongitud implements Filter<Integer>{
-	
-	public Integer filtro() {
-		return 6;
+public class FiltroLongitud implements Filtro<Integer> {
+
+	@Override
+	public Integer apply(String s) {
+		return s.length();
 	}
 }
